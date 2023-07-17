@@ -1,0 +1,192 @@
+/**** Reset ****/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    list-style-type: none;
+}
+
+/**** Style général de la page ****/
+
+body {
+    background-color: rgba(27, 8, 94, 0.836);
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+h1{
+    font-size: 24px;
+}
+
+main {
+   min-height: 75vh;
+}
+
+header, 
+form {
+    min-height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, 
+form button {
+    padding: 10px;
+    padding-left: 16px;
+    font-size: 24px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+form input {
+    transition: border 0.3s ease-in-out;
+}
+
+form input:focus{
+    border: 3px solid rgb(255, 200, 0);
+}
+
+form button {
+    color: rgb(255, 200, 0);
+    background-color: #ffffff;
+    transition: all 0.3 ease;
+    margin-left: 16px;
+}
+
+form button:hover {
+    color: #ffffff;
+    background-color: rgb(255, 200, 0);
+}
+
+.fa-plus-circle {
+    margin-top: 5px;
+    margin-left: -8px;
+}
+
+.todo__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo__list {
+    min-width: 30%;
+}
+
+.todo {
+    margin: 8px;
+    padding-left: 8px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 8px;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.trash-btn, 
+.complete-btn {
+    color: #ffffff;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.complete-btn {
+    background-color: rgb(112, 241, 112);
+}
+
+.trash-btn {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: rgb(250, 46, 46);
+}
+
+.todo-item {
+    padding: 0 8px;
+}
+
+.fa-trash, 
+.fa-check-circle {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.slide {
+    transform: translateX(160px);
+    opacity: 0;
+}
+
+.select {
+    margin: 16px;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+select {
+    color:rgb(255, 200, 0);
+    width: 160px;
+    height: 52px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+/**** Responsive design ****/
+
+
+@media screen and (max-width: 664px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    form {
+        margin: 0 15px
+    }
+    
+}
+
+@media screen and (max-width: 598px) {
+    .select {
+        margin-bottom: 100px
+    }
+}
+
+@media screen and (max-width: 478px) {
+    h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 406px) {
+    form button {
+        margin-bottom: 87px;
+    }
+}
