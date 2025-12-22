@@ -3,32 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My todo list</title>
+    <title>ToDo LISTE</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>Ma liste de choses à faire</h1>
+      <h1>ToDo Liste 📋✔️</h1>
     </header>
     <main>
       <section class="todo__form">
-        <form action="">
-          <input type="text" class="todo__input" />
+        <form action="#">
+          <input
+            type="text"
+            class="todo__input"
+            placeholder="Ecrivez votre todo"
+            required
+          />
           <button class="todo__btn" type="submit">
+            Ajouter ce todo
             <i class="fas fa-plus-circle fa-lg"></i>
           </button>
           <div class="select">
             <select name="todos" class="filter-todo">
-              <option value="all">Tous</option>
-              <option value="completed">Réalisé(s)</option>
-              <option value="incomplete">Non réalisé(s)</option>
+              <option value="all">Tous les todos</option>
+              <option value="completed">Todo(s) réalisé(s)</option>
+              <option value="incomplete">Todo(s) non réalisé(s)</option>
             </select>
           </div>
         </form>
@@ -39,7 +43,7 @@
       </section>
     </main>
     <footer>
-      <span>Site créé par aperbet56</span>
+      <span>&#9400 Copyright <span class="year"></span>. ToDo Liste 📋✔️</span>
     </footer>
 
     <script src="script.js"></script>
