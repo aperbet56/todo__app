@@ -99,7 +99,7 @@ form button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    margin-block: 60px;
 }
 
 .todo__list {
@@ -183,4 +183,35 @@ footer {
     font-size: 20px;
     font-weight: 500;
     font-family: "Pacifico", sans-serif;
+}
+
+/**** Responsive design ****/
+
+@media screen and (max-width: 991px) {
+    body {
+        padding-inline: 16px;
+    }
+
+    form {
+        display: block;
+        margin: 0;
+    }
+
+    form button,
+    .select,
+    .todo {
+        margin-inline: 0;
+    }
+
+    form input,
+    form button,
+    .select select,
+    .todo__list {
+        width: 100%;
+        margin-block: 20px;
+    }
+
+    .select select {
+        margin-top: 0;
+    }
 }
