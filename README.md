@@ -10,7 +10,7 @@ Les todos sont stockés dans le local storage. Le local storage est une techniqu
 
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/todo__app/
 
 ## Projet développé avec
 
