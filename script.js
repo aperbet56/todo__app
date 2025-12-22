@@ -3,6 +3,7 @@ const todoInput = document.querySelector(".todo__input");
 const todoButton = document.querySelector(".todo__btn");
 const todoList = document.querySelector(".todo__list");
 const filterOption = document.querySelector(".filter-todo");
+const footerYear = document.querySelector(".year");
 
 // Création de la fonction addTodo pour créer un todo
 const addTodo = () => {
@@ -135,6 +136,19 @@ const removeLocalTodos = (todo) => {
   // Mise à jour du local storage
   localStorage.setItem("todos", JSON.stringify(todos));
 };
+
+// Declaration of the getCurrentYear function which will allow us the dynamic display of the year
+const getCurrentYear = () => {
+  const date = new Date();
+  //console.log(date);
+
+  const year = date.getFullYear();
+  //console.log(year);
+
+  footerYear.textContent = `${year}`;
+};
+// getCurrentYear function call
+getCurrentYear();
 
 // Ecoutes des événements
 document.addEventListener("DOMContentLoaded", getLocalTodos);
