@@ -6,6 +6,8 @@
 
 ![Design preview for the project](./img/banner-3.png)
 
+![Design preview for the project](./img/banner-4.png)
+
 ## Le challenge
 
 Création d'une ToDo Liste en HTML5, CSS3 et JavaScript.
