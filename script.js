@@ -150,8 +150,16 @@ const getCurrentYear = () => {
 // getCurrentYear function call
 getCurrentYear();
 
-// Ecoutes des événements
+// Ecoutes des événements et appel des fonctions
 document.addEventListener("DOMContentLoaded", getLocalTodos);
-todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
 filterOption.addEventListener("change", filterTodo);
+
+todoButton.addEventListener("click", () => {
+  if (todoInput.value === "") {
+    return;
+  } else {
+    // Appel de la fonction addTodo()
+    addTodo();
+  }
+});
